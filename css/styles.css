@@ -23,7 +23,7 @@ header {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -128,7 +128,12 @@ a {
   width: 1600px;
   /* height: 600px; */
 
-  background-color: teal;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero.jpg);
 }
 
 .hero-header {
@@ -217,6 +222,60 @@ footer .button {
   text-transform: uppercase;
   font-size: inherit;
   color: var(--header-dark-color);
+}
+
+.about-items:nth-child(1)::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-items:nth-child(2)::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-items:nth-child(3)::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-items:nth-child(4)::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about .text,

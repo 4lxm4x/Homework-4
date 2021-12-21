@@ -414,6 +414,17 @@ footer .button {
   background-color: var(--accent-color);
 }
 
+.icon {
+  padding: 0;
+  border: none;
+  fill: #afb1b8;
+}
+
+.list.socials li:hover .icon,
+.list.socials li:focus .icon {
+  fill: #fff;
+}
+
 .team .list.socials li:last-child {
   margin-right: 0;
 }
@@ -442,14 +453,31 @@ footer .button {
 }
 
 .clients .list li {
+  display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 19px 65px;
+  /* padding: 19px 65px; */
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+}
+
+.clients-logo {
+  fill: #afb1b8;
+  padding: 0;
+  border: none;
 }
 
 .clients .list li:hover,
 .clients .list li:focus {
   border: 1px solid var(--accent-color);
+}
+
+.clients .list li:hover .clients-logo,
+.clients .list li:focus .clients-logo {
+  fill: var(--accent-color);
 }
 
 /* FOOTER */

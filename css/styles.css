@@ -38,6 +38,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .list {
   list-style: none;
@@ -102,12 +107,25 @@ a {
 
 .contact {
   display: flex;
-
+  padding-top: auto;
+  padding-bottom: auto;
   margin-left: auto;
 }
 
-.tel {
+.contact .envelope {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contact .smartphone {
   margin-left: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.tel {
   color: var(--text-color);
 }
 
@@ -360,6 +378,7 @@ footer .button {
 
 .team > .list > li {
   padding-bottom: 24px;
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.3);
 }
 
 .team .list li {
@@ -396,12 +415,12 @@ footer .button {
   letter-spacing: 0.03em;
 }
 
-.team .list.socials {
+.list.socials {
   display: flex;
   justify-content: center;
 }
 
-.team .list.socials li {
+.list.socials li {
   height: 44px;
   padding: 12px;
   margin-right: 10px;
@@ -409,15 +428,27 @@ footer .button {
   border-radius: 50%;
 }
 
-.team .list.socials li:hover,
-.team .list.socials li:focus {
+.list.socials li:hover,
+.list.socials li:focus,
+.footer-social .list.socials li:hover,
+.footer-social .list.socials li:focus {
   background-color: var(--accent-color);
+}
+
+.footer-social .list.socials li {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .icon {
   padding: 0;
   border: none;
   fill: #afb1b8;
+}
+
+.footer-social .icon {
+  padding: 0;
+  border: none;
+  fill: #ffffff;
 }
 
 .list.socials li:hover .icon,
@@ -486,6 +517,8 @@ footer .button {
   width: 1600px;
   padding-left: 215px;
   padding-right: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   background-color: #2f303a;
   justify-content: center;
@@ -533,12 +566,20 @@ address {
 
   color: #fff;
 }
-address ul::first-line {
+/* address ul::first-line {
+  color: #fff;
+  
+} */
+
+.text.address {
+  display: block;
+
   color: #fff;
 }
 
 .footer-address {
   margin-right: 94px;
+  /* margin-bottom: 60px; */
 }
 
 .footer-subscribe .button {
@@ -598,8 +639,13 @@ address ul::first-line {
   /* outline: 1px solid red; */
 }
 
+.project:hover,
+.project:focus {
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
 .project a {
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .project:not(:nth-child(3n)) {

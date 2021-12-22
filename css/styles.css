@@ -205,18 +205,24 @@ footer .button {
   display: flex;
 }
 
-.about-img {
+/* .about-img {
   display: inline-block;
   width: 270px;
   height: 120px;
   padding: 25px 100px;
+  
+
+  background-color: #f5f4fa; 
+}  */
+.about-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 
-  background-color: #f5f4fa;
-}
-.about-items {
   width: 270px;
-  /* outline: 1px solid tomato; */
+  height: 120px;
+  background-color: #f5f4fa;
 }
 .about-items:not(:last-child) {
   margin-right: 30px;
@@ -242,7 +248,7 @@ footer .button {
   color: var(--header-dark-color);
 }
 
-.about-items:nth-child(1)::before {
+/* .about-items:nth-child(1)::before {
   content: "";
   display: flex;
   width: 270px;
@@ -294,7 +300,7 @@ footer .button {
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .about .text,
 .text {
@@ -624,6 +630,7 @@ address {
 
 .filter .button:hover {
   background-color: var(--accent-color);
+  box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.3);
   color: #fff;
 }
 
@@ -641,7 +648,7 @@ address {
 
 .project:hover,
 .project:focus {
-  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
 .project a {
